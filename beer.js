@@ -4,6 +4,7 @@
     Program: beer.js
     Description: Provides required JavaScript/JQuery to provide CRUD operations for BeerBuddyFL Website
 */
+
 const URL_ENDPOINT = 'http://localhost:3000/beerList';
 
 

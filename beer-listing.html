@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     /> 
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/cr-1.6.2/r-2.4.1/datatables.min.css" rel="stylesheet"/>
 
 </head>
 
@@ -157,12 +158,12 @@
     <div class="container py-4">
         <div class="row">
             <!-- left column -->
-            <div class="col-md-5">
-                <h1><em>Submit your favorite Florida Beer!</em></h1>
+            <div class="col-md-3 text-center">
+                <h1><em>Submit Your Favorite Florida Beer!</em></h1>
                 <h5><em>Is our list missing something? Help us make our list complete!</em></h5>
                 <p>
                     Beer Buddy Florida is still in its infancy. Your help will enable us to grow! Use the controls on the right to sort the table by Brewery to see the beers that we
-                    currently have indexed. If your favorite is not on the list, click the button below to add it! <strong><em>Thanks for helping Beer Buddy Florida to grow!</em></strong>    
+                    currently have indexed. If your favorite is not on the list, click the button below to add it! <strong><em><br><br>Thanks for helping Beer Buddy Florida to grow!</em></strong>    
                 </p>
 
                 <!-- Button trigger modal -->
@@ -172,7 +173,7 @@
             </div> <!-- end left column -->
 
             <!-- right column -->
-            <div class="col-md-7">
+            <div class="col-md-9">
                 <h2>Our Florida Beer List</h2>
                 
                 <table id="beer-listing" class="table table-warning table-hover border border-1 table-striped">
@@ -221,5 +222,7 @@
     <!-- website script -->
     <script src="./beer.js"></script>
     <script src="https://kit.fontawesome.com/c06407c9e8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
 </body>
 </html>
