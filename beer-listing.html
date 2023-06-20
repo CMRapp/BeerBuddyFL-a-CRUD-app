@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Buddy Florida | Submit A Beer</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    /> 
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="bg-dark">
+    <!-- Website Header -->
+    <header>
+      <!-- use for top admin bar / widgets -->
+  </header>
+  
+  <!-- Navigation Bar -->
+  
+  <div class="container-fluid">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark nav-pills">
+          <div class="container">
+              <a class="navbar-brand" href="index.html">
+                  <img src="./images/bb-fl-logo.png" alt="Beer Buddy FL Logo">
+              </a>
+          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav navbar-nav me-auto mb-2 mb-sm-0">
+                      <li class="nav-item">
+                          <a class="nav-link disabled" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Breweries</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Beers</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link disabled" href="beer-styles.html">Styles</a>
+                      </li>            
+                      <li class="nav-item">
+                          <a class="nav-link disabled" href="submit-beer.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="submit-beer.html">Submit A Beer</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search is inactive" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+
+      <!-- Breadcrumbs for future use
+      <div class="container-fluid bg-dark">
+        <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page"><a href="index.html" class="text-decoration-none"></a>Home</li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Breweries</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Beers</a></li>
+                <li class="breadcrumb-item"><a href="beer-styles.html" class="text-decoration-none">Styles</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Submit</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Contact</a></li>
+            </ol>
+        </nav>
+        </div>
+    </div>
+    -->
+ 
+<!-- MAIN CONTENT -->
+
+<!-- modal box for data entry -->
+<div class="modal fade" id="beerDataModal" tabindex="-1" aria-labelledby="beerDataModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-4" id="modalTitle"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Thanks for taking the time to add a new Florida Beer to our database! Please use the form below to enter your information.</p>
+          <h4>Beer Data</h4>  
+
+          <!-- Form -->
+          <form>
+            <div class="row">
+                <div class = "col-6">
+                    <div class="form-group">
+                        <label for="beer-name">Beer Name</label>
+                        <input type="text" class="form-control" id="beer-name" tabindex="1">
+                    </div>        
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="brewery">Brewery</label>
+                        <input type="text" class="form-control" id="brewery" tabindex="2">  
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class = "col-4">
+                    <div class="form-group">
+                        <label for="beer-abv">ABV</label>
+                        <input type="text" class="form-control" id="beer-abv" tabindex="3">
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-group">   
+                        <label for="beer-ibu">IBU</label>
+                        <input type="text" class="form-control" id="beer-ibu" tabindex="4">
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="beer-style">Beer Style</label>
+                        <input type="text" class="form-control" id="beer-style" tabindex="5">
+
+                    </div>
+                </div>
+            </div>  
+        </form>
+         </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning disabled" id="updateCurrentBeer">Update Beer</button>  
+          <button type="button" class="btn btn-warning" id="submitBeer">Submit Beer</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelUpdate" onclick="clearForm()">Cancel</button>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+ <main class="container-fluid bg-light text-dark py-1">
+    <div class="container">
+        <!-- full width hero image goes here -->
+        <img src="./images/craft-beer-hero.png" class="img-fluid border border-danger border-1 rounded" alt="craft beer image">
+    </div>
+
+    <div class="container py-4">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-5">
+                <h1><em>Submit your favorite Florida Beer!</em></h1>
+                <h5><em>Is our list missing something? Help us make our list complete!</em></h5>
+                <p>
+                    Beer Buddy Florida is still in its infancy. Your help will enable us to grow! Use the controls on the right to sort the table by Brewery to see the beers that we
+                    currently have indexed. If your favorite is not on the list, click the button below to add it! <strong><em>Thanks for helping Beer Buddy Florida to grow!</em></strong>    
+                </p>
+
+                <!-- Button trigger modal -->
+                <button id="launch-modal" class="btn btn-warning form-control my-4" onclick="showModal(false)">
+                    Click to submit A Florida Beer <i class="fa fa-beer" aria-hidden="true"></i>
+                </button>
+            </div> <!-- end left column -->
+
+            <!-- right column -->
+            <div class="col-md-7">
+                <h2>Our Florida Beer List</h2>
+                
+                <table id="beer-listing" class="table table-warning table-hover border border-1 table-striped">
+                    <thead>
+                        <th class="border border-1 border-start-0">Beer Name</th>
+                        <th class="border border-1 border-start-0">Brewer</th>
+                        <th class="border border-1 border-start-0">ABV</th>
+                        <th class="border border-1 border-start-0">IBU</th>
+                        <th class="border border-1 border-start-0">Style</th>
+                        <th class="border border-1 border-start-0 text-center">Update</th>
+                        <th class="border border-1 border-start-0 text-center">Delete</th>
+                    </thead>
+                    <tbody></tbody>                    
+                </table>
+                <small><em>TODO: add controls to sort columns | add pagination.</em></small>
+            </div><!-- end right column-->
+        </div>  
+    </div>    
+</main>
+   
+
+     <!-- FOOTER -->
+     <footer class="container-fluid bg-dark text-light py-2 h-100 d-inline-block">
+        <div class="container">
+          <p>&copy 2023 Christian M Rapp | <a href="https://www.cmrwebstudio.com" target="_blank" class="text-decoration-none">CMR Web Studio</a>
+          <img class="float-end"  height=45px src="images\cmr_sig5.png"></p>
+        </div>
+      </footer>
+
+ 
+    <!-- CDNs -->
+    <!-- Jquery CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+  
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- website script -->
+    <script src="./beer.js"></script>
+    <script src="https://kit.fontawesome.com/c06407c9e8.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "beerList": [
+    {
+      "beerName": "Gateway Gold",
+      "brewery": "Fort Myers Brewing Co",
+      "abv": "4.2%",
+      "ibu": "N/A",
+      "style": "Blonde Ale",
+      "id": 1
+    },
+    {
+      "beerName": "High 5 IPA",
+      "brewery": "Fort Myers Brewing Co",
+      "abv": "5.9%",
+      "ibu": "59",
+      "style": "American IPA",
+      "id": 2
+    },
+    {
+      "beerName": "Oaty McOatface",
+      "brewery": "Millennial Brewing Co",
+      "abv": "6.5%",
+      "ibu": "N/A",
+      "style": "Stout",
+      "id": 3
+    },
+    {
+      "beerName": "Hoptain Planet",
+      "brewery": "Millennial Brewing Co",
+      "abv": "7.3%",
+      "ibu": "N/A",
+      "style": "American IPA",
+      "id": 4
+    }
+  ]
+}
