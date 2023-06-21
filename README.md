@@ -3,7 +3,7 @@ A repository for the Promineo Tech FE Developer WK 12 final coding assignment. P
 
 ## Project: Beer Buddy Florida
 ### Description: 
-### One page website that uses internal 'database' in leiu of API. Allows for CRUD (Create, Read, Update, Delete) operations.
+### One page website that uses a local array in leiu of an API. Allows for CRUD (Create, Read, Update, Delete) operations.
 Technologies / languages used: HTML, CSS, Bootstrap, JavaScript, JQuery
 
 NOTE: If downloading the files to run on your own computer. You must install json server and wacth the beerdb.json file.
