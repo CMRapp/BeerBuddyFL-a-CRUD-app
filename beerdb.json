@@ -46,7 +46,7 @@
       "abv": "11%",
       "ibu": "N/A",
       "style": "Pilsner",
-      "id": 5
+      "id": 6
     },
     {
       "beerName": "City Beautiful IPA",
@@ -54,7 +54,7 @@
       "abv": "6.4%",
       "ibu": "N/A",
       "style": "American IPA",
-      "id": 5
+      "id": 7
     },
     {
       "beerName": "Sunny Key Lime",
@@ -62,7 +62,7 @@
       "abv": "4.5%",
       "ibu": "N/A",
       "style": "Wheat Ale",
-      "id": 7
+      "id": 8
     },
     {
       "beerName": "Wavemaker Amber Ale",
@@ -71,6 +71,38 @@
       "ibu": "28",
       "style": "Red Ale",
       "id": 9
+    },
+    {
+      "beerName": "Bromosa Tangerine IPA",
+      "brewery": "Big Storm Brewing Co",
+      "abv": "7.1%",
+      "ibu": "N/A",
+      "style": "American IPA",
+      "id": 10
+    },
+    {
+      "beerName": "O.Y.A.",
+      "brewery": "Fort Myers Brewing Co",
+      "abv": "10.5%",
+      "ibu": "N/A",
+      "style": "Imperial IPA",
+      "id": 11
+    },
+    {
+      "beerName": "American Revolution",
+      "brewery": "Millennial Brewing Co",
+      "abv": "6.1%",
+      "ibu": "45",
+      "style": "Pale Ale",
+      "id": 12
+    },
+    {
+      "beerName": "Red Tape",
+      "brewery": "Fort Myers Brewing Co",
+      "abv": "5.8%",
+      "ibu": "N/A",
+      "style": "Red Ale",
+      "id": 13
     }
   ]
 }

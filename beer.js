@@ -7,7 +7,6 @@
 
 const URL_ENDPOINT = 'http://localhost:3000/beerList';
 
-
 //GET the current information from 'API' database and populate table
 $.get(URL_ENDPOINT).then(data => {
     data.map(beer => {

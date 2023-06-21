@@ -24,6 +24,17 @@ body {
     border: 3px solid #212529;
   }
 
+/* STYLE TABLES FOR SCROLL BARS */
+.table-responsive {
+  max-height:360px;
+}
+
+/*STICKY HEADER for table */
+thead {
+  position: sticky;
+  top: -1px;
+}
+
 .odd{display:none;}
 
 .hidden {
@@ -40,35 +51,4 @@ body {
     max-width: 100%;
 }
 
-
-/**** Media Queries ****/
-@media screen and (max-width: 1280px){
-   .container .play-sq{
-        width: 200px;
-        height: 200px;
-    }
-
-    #playing-grid{
-        width: 1100px;
-    }
-}
-
-@media screen and (max-width: 640px){
-    .footer-logo{
-        display:none;
-    }  
-
-    .p1img, .p2img{
-        margin-top:-90px;
-    }
-    
-    .container .play-sq{
-        width: 100px;
-        height: 100px;
-    }
-
-    #playing-grid{
-        width: 435px;
-    }
-}
 

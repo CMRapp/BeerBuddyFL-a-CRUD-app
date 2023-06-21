@@ -13,7 +13,6 @@
       crossorigin="anonymous"
     /> 
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/cr-1.6.2/r-2.4.1/datatables.min.css" rel="stylesheet"/>
 
 </head>
 
@@ -176,18 +175,20 @@
             <div class="col-md-8">
                 <h2>Our Florida Beer List</h2>
                 
-                <table id="beer-listing" class="table table-warning table-hover border border-1 table-striped">
-                    <thead>
-                        <th class="border border-1 border-start-0">Beer Name</th>
-                        <th class="border border-1 border-start-0">Brewer</th>
-                        <th class="border border-1 border-start-0">ABV</th>
-                        <th class="border border-1 border-start-0">IBU</th>
-                        <th class="border border-1 border-start-0">Style</th>
-                        <th class="border border-1 border-start-0 text-center">Update</th>
-                        <th class="border border-1 border-start-0 text-center">Delete</th>
-                    </thead>
-                    <tbody></tbody>                    
-                </table>
+                <div class="table-responsive">
+                    <table id="beer-listing" class="table table-warning table-hover border border-1 table-striped">
+                        <thead>
+                            <th class="border border-1 border-start-0">Beer Name</th>
+                            <th class="border border-1 border-start-0">Brewer</th>
+                            <th class="border border-1 border-start-0">ABV</th>
+                            <th class="border border-1 border-start-0">IBU</th>
+                            <th class="border border-1 border-start-0">Style</th>
+                            <th class="border border-1 border-start-0 text-center">Update</th>
+                            <th class="border border-1 border-start-0 text-center">Delete</th>
+                        </thead>
+                        <tbody></tbody>                    
+                    </table>
+                </div>
                 <small><em>TODO: add controls to sort columns | add pagination.</em></small>
             </div><!-- end right column-->
         </div>  
@@ -222,7 +223,5 @@
     <!-- website script -->
     <script src="./beer.js"></script>
     <script src="https://kit.fontawesome.com/c06407c9e8.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
 </body>
 </html>
