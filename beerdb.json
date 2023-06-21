@@ -55,6 +55,22 @@
       "ibu": "N/A",
       "style": "American IPA",
       "id": 5
+    },
+    {
+      "beerName": "Sunny Key Lime",
+      "brewery": "Big Storm Brewing Co",
+      "abv": "4.5%",
+      "ibu": "N/A",
+      "style": "Wheat Ale",
+      "id": 7
+    },
+    {
+      "beerName": "Wavemaker Amber Ale",
+      "brewery": "Big Storm Brewing Co",
+      "abv": "4.9%",
+      "ibu": "28",
+      "style": "Red Ale",
+      "id": 9
     }
   ]
 }

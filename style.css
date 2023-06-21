@@ -1,7 +1,27 @@
 body {
     background-color:#ffffff;
-    overflow:hidden;
 }
+/* STYLE SCROLLBARS */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #fef4cf #212529;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #212529;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #fef4cf;
+    border-radius: 6px;
+    border: 3px solid #212529;
+  }
 
 .odd{display:none;}
 
