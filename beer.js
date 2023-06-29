@@ -48,8 +48,8 @@ function showModal(update, id) {
             $("#beer-style").val(data.style);
         });
         
-        $("#submitBeer").addClass("disabled");                  //deactivate the submit beer button
-        $("#updateCurrentBeer").removeClass("disabled");        //activate update beer button
+        $("#submitBeer").addClass("hidden");                  //deactivate the submit beer button
+        $("#updateCurrentBeer").removeClass("hidden");        //activate update beer button
         $("#updateCurrentBeer").click(function(e) {             //call the updateBeer function. use preventDefault() to prevent modal from closing
             e.preventDefault();
             $("#updateCurrentBeer").attr("onclick", updateBeer(id));
