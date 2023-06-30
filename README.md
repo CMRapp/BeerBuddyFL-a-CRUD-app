@@ -1,4 +1,4 @@
-# Beer Buddy FL - CRUD (FE-Wk12-Final)
+# Beer Buddy FL - Front End CRUD Application
 A repository for the Promineo Tech FE Developer WK 12 final coding assignment. Project is a website that connects to an API and uses performs CRUD operations
 
 ## Project: Beer Buddy Florida
